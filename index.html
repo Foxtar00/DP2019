@@ -7,7 +7,7 @@
         <meta name="author" content="홍현준" />
         <style>
             #wrap{
-                background-color: rgba(60, 216, 216, 0.911);
+                background-color: rgba(255, 255, 255, 0.911);
             }
             .clear{
                 clear: both;
@@ -90,6 +90,54 @@
                 letter-spacing: 15px;
                 margin:8px 0px;
             }
+            #middle{
+            }
+            #middle>ul{
+                list-style: none;
+                float:left;
+            }
+            #footer_left{
+                float:left;
+            }
+            footer{
+                background-color: #333;
+                color: #aaa;
+            }
+            #navi_ul{
+                padding: 0px;
+            }
+            #navi_ul>li{
+                float: left;
+                list-style:none;
+                padding: 0px 10px;
+                border-right: solid 2px #aaa;
+            }
+            #navi_ul>li img{
+                width: 70px;
+                height: auto;
+            }
+            #navi_ul>li:nth-child(1) img{
+                width: 45px;
+                height: auto;
+            }
+            #navi_ul>li:nth-child(5){
+                border: none;
+            }
+            #navi_ul>li:nth-child(5) img{
+                width:90px;
+                height: auto;
+            }
+            #icon_ul{
+                padding: 0px;
+            }
+            #icon_ul>li{
+                float: left;
+                list-style:none;
+                padding: 0px 10px;
+            }
+            #icon_ul{
+                float: right;
+            }
         </style>
     </head>
     <body>
@@ -101,27 +149,64 @@
                         <li><a href="layout1.html">Layout1</a></li>
                         <li><a href="layout2.html">Layout2</a></li>
                         <li><a href="layout3.html">Layout3</a></li>
-                        <li><a href="layout4.html">Free layout</a></li>
+                        <li><a href="free_layout.html">Free layout</a></li>
                         <div class="clear"></div>
                     </ul>
                 </nav>
             </header>
             <div id="main">
-                    <div id="top_title">
-                        COMMUNICATION DESIGN
-                    </div>
-                    <h2>
-                        incididunt bore
-                    </h2>
-                    <div id="bottom_title">
-                        Orem ipsum dolor sit amet, consectetur
-                    </div>
-                    <div id="button_container">
-                        <img src="images/layout2_button.jpg"/>
-                    </div>
+                <div id="top_title">
+                    COMMUNICATION DESIGN
+                </div>
+                <h2>
+                    FREE LAYOUT
+                </h2>
+                <div id="bottom_title">
+                    work by HTML
+                </div>
+                <div id="button_container">
+                    <a href="free_layout.html"><img src="images/layout2_button.jpg"/></a>
                 </div>
             </div>
+            <div id="middle">
+                <ul><h3>중간고사</h3>
+                    <li><a href="training.html">traning</a></li>
+                    <li><a href="html_part1_hd.html">html_part1_hd</a></li>
+                    <li><a href="html5.html">html5</a></li>
+                    <li><a href="form.html">form</a></li>
+                    <li><a href="css.html">css</a></li>
+                    <li><a href="css_part1.html">css_part1</a></li>
+                </ul>
+                <ul><h3>기말고사</h3>
+                    <li><a href="layout1.html">Layout1</a></li>
+                    <li><a href="layout2.html">Layout2</a></li>
+                    <li><a href="layout3.html">Layout3</a></li>
+                    <li><a href="free_layout.html">Free layout</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
             <footer>
+                <div id=footer_left>
+                <ul id="navi_ul">
+                    <li><a href="index.html"><img src="images/free_footer_index.png"></a></li>
+                    <li><a href="layout1.html"><img src="images/free_footer1.png"></a></li>
+                    <li><a href="layout2.html"><img src="images/free_footer2.png"></a></li>
+                    <li><a href="layout3.html"><img src="images/free_footer3.png"></a></li>
+                    <li><a href="free_layout.html"><img src="images/free_footer4.png"></a></li>
+                    <div class="clear"></div>
+                </ul>
+                <p>ⓒ 2019 HTML DESIGN CLASS.</p>
+                <p>made by Hong Hyeonjun.</p>
+                </div>
+                <ul id="icon_ul">
+                    <li><img src="images/layout1_footer_icon1.png"></li>
+                    <li><img src="images/layout1_footer_icon2.png"></li>
+                    <li><img src="images/layout1_footer_icon3.png"></li>
+                    <li><img src="images/layout1_footer_icon4.png"></li>
+                    <li><img src="images/layout1_footer_icon5.png"></li>
+                    <li><img src="images/layout1_footer_icon6.png"></li>
+                </ul>
+                <div class="clear"></div>
             </footer>
         </div>
     </body>

@@ -1,12 +1,206 @@
 <!doctype>
 <html>
     <head>
-        <title></title>
+        <title>joon polio</title>
         <meta charset="utf-8"/>
+        <style>
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+            header>nav>ul>li{
+                float:left;
+                list-style: none;
+                padding: 0px 10px;
+                padding-top: 10px;
+            }
+            header>nav:nth-child(1)>ul>li:nth-child(1){
+                padding-right: 30px;
+                padding-top: 5px;
+            }
+            header{
+                background-color: black;
+                opacity: 80%;
+                color: white;
+                font-size: 80%;
+            }
+            header>nav:nth-child(2)>ul>li:nth-child(5){
+                padding-right: 60px;
+            }
+            #content{
+                background-image: url("images/freelayout_main.jpg");
+                background-size: auto 100%;
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 20% 20%;
+
+                color: white;
+                font-size: 20px;
+            }
+            #title img{
+                width: 15%;
+                padding-bottom: 20px;
+                }
+            }
+            #title_text{
+                text-align: left;
+            }
+            #main{
+                padding: 150px 40px 0px 40px;
+                float: left;
+            }
+            #content div ul li{
+                list-style: none;
+                float: left;
+            }
+            #content div ul{
+                padding-left: 40px;
+                padding-top: 50px;
+            }
+            #footer_left{
+                float:left;
+            }
+            footer{
+                background-color: #333;
+                color: #aaa;
+            }
+            #navi_ul{
+                padding: 0px;
+            }
+            #navi_ul>li{
+                float: left;
+                list-style:none;
+                padding: 0px 10px;
+                border-right: solid 2px #aaa;
+            }
+            #navi_ul>li img{
+                width: 70px;
+                height: auto;
+            }
+            #navi_ul>li:nth-child(1) img{
+                width: 45px;
+                height: auto;
+            }
+            #navi_ul>li:nth-child(5){
+                border: none;
+            }
+            #navi_ul>li:nth-child(5) img{
+                width:90px;
+                height: auto;
+            }
+            #icon_ul{
+                padding: 0px;
+            }
+            #icon_ul>li{
+                float: left;
+                list-style:none;
+                padding: 0px 10px;
+            }
+            #icon_ul{
+                float: right;
+            }
+            #video{
+                padding: 30px 0px;
+            }
+            #video video{
+                width: 40%;
+                height: auto;
+            }
+        </style>
     </head>
     <body>
-        <header></header>
-        <nav></nav>
-        <footer></footer>
+        <div id="wrap">
+            <header>
+                <nav class="float_left">
+                <ul>
+                    <li><a href="free_layout.html"><img src="images/freelayout_logo.png"/></a></li>
+                    <li><b>홈</b></li>
+                    <li>TV 프로그램</li>
+                    <li>영화</li>
+                    <li>최신 등록 콘텐츠</li>
+                    <li>내가 찜한 콘텐츠</li>
+                </ul>
+                </nav>
+                <nav class="float_right">
+                    <ul>
+                        <li><img src="images/freelayout_btn1.png"/></li>
+                        <li>키즈</li>
+                        <li><img src="images/freelayout_btn2.png"/></li>
+                        <li><img src="images/freelayout_btn3.png"/></li>
+                        <li><img src="images/freelayout_btn4.png"/></li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="content">
+                <div id="main">
+                <div id="title">
+                    <img src="images/freelayout.titlelogo.png"/>
+                    <div id="title_text">
+                    오락실의 16비트 세상을 접수한 주먹왕 랄프. 위기에 빠진 <br/>
+                    절친 바넬로피를 구하기 위해 새로운 세상으로 출격한다. <br />
+                    휘황찬란, 번쩍번쩍, 어마어마한 인터넷 세상 속으로!
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="video">
+                    <video controls autoplay>
+                    <source src="./media/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                    </video>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+                <div id="ani">
+                    <ul><h1>애니메이션</h1>
+                        <li><img src="images/freelayout_img1.jpg"/></li>
+                        <li><img src="images/freelayout_img3.jpg"/></li>
+                        <li><img src="images/freelayout_img4.jpg"/></li>
+                        <li><img src="images/freelayout_img5.jpg"/></li>
+                        <li><img src="images/freelayout_img6.jpg"/></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+            </div>
+            <footer>
+                <div id=footer_left>
+                <ul id="navi_ul">
+                    <li><a href="index.html"><img src="images/free_footer_index.png"></a></li>
+                    <li><a href="layout1.html"><img src="images/free_footer1.png"></a></li>
+                    <li><a href="layout2.html"><img src="images/free_footer2.png"></a></li>
+                    <li><a href="layout3.html"><img src="images/free_footer3.png"></a></li>
+                    <li><a href="free_layout.html"><img src="images/free_footer4.png"></a></li>
+                    <div class="clear"></div>
+                </ul>
+                <p>ⓒ 2019 HTML DESIGN CLASS.</p>
+                <p>made by Hong Hyeonjun.</p>
+                </div>
+                <ul id="icon_ul">
+                    <li><img src="images/layout1_footer_icon1.png"></li>
+                    <li><img src="images/layout1_footer_icon2.png"></li>
+                    <li><img src="images/layout1_footer_icon3.png"></li>
+                    <li><img src="images/layout1_footer_icon4.png"></li>
+                    <li><img src="images/layout1_footer_icon5.png"></li>
+                    <li><img src="images/layout1_footer_icon6.png"></li>
+                </ul>
+                <div class="clear"></div>
+            </footer>
+        </div>
     </body>
 </html>
