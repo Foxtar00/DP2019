@@ -5,17 +5,124 @@
         <meta charset="utf=8" />
         <!-- utf=8, euc-kr -->
         <meta name="author" content="홍현준" />
+        <style>
+            #wrap{
+                background-color: rgba(60, 216, 216, 0.911);
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;}
+            .short_line{
+                width: 30px;
+                border-bottom: solid 1px gray;
+                margin: 10px 0px;
+            }
+            .long_line{
+                width: 90px;
+                border-bottom: solid 1px gray;
+                margin: 10px 0px;
+            }
+            nav{
+                background-color: white;
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 0px;
+                padding-bottom: 7px; 
+                border-right: solid 2px rgb(161, 161, 161);
+                width: 100px;
+
+                color: gray;
+                font-size: 16px;
+            }
+            header>nav>ul>li:nth-last-child(2){
+                border:none;
+            }
+            header>nav>ul{
+                width: calc(122px * 4);
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0px;
+                text-align: center;
+            }
+            header>h1{
+                margin:0px;
+                text-align: center;
+            }
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-right:auto;
+                margin-left:auto;
+            }
+            #main{
+                background-image: url("images/freelayout_1.jpg");=
+                background-size: auto 100%;
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+
+                color: white;
+                text-align: center;
+                padding: 100px 0px;
+            }
+            #main_visual>h2{
+                font-size: 45px;
+                letter-spacing: 15px;
+                margin:8px 0px;
+            }
+            #top_title{
+                font-size: 25px;
+            }
+            #bottom_title{
+                font-size: 15px;
+            }
+            #button_container{
+                margin-top: 100px;
+            }
+            #main>h2{
+                font-size: 45px;
+                letter-spacing: 15px;
+                margin:8px 0px;
+            }
+        </style>
     </head>
     <body>
-        <a href="training.html">HTML연습</a> <br />
-        <a href="html_part1_hd.html">알바 오픈 준비</a> <br />
-        <a href="html5.html">HTML5</a> <br />
-        <a href="form.html">FORM</a> <br />
-        <a href="css.html">CSS</a> <br />
-        <a href="css_part1.html">CSS_PART1</a> <br />
-        <a href="layout1.html">LAYOUT1</a> <br />
-        <a href="layout2.html">LAYOUT2</a> <br />
-        <a href="layout3.html">LAYOUT3</a> <br />
-        <p>hello world 2019222019 홍현준</p>
+        <div id="wrap">
+            <header>
+                <h1>2019 HTML Design</h1>
+                <nav>
+                    <ul>
+                        <li><a href="layout1.html">Layout1</a></li>
+                        <li><a href="layout2.html">Layout2</a></li>
+                        <li><a href="layout3.html">Layout3</a></li>
+                        <li><a href="layout4.html">Free layout</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+            </header>
+            <div id="main">
+                    <div id="top_title">
+                        COMMUNICATION DESIGN
+                    </div>
+                    <h2>
+                        incididunt bore
+                    </h2>
+                    <div id="bottom_title">
+                        Orem ipsum dolor sit amet, consectetur
+                    </div>
+                    <div id="button_container">
+                        <img src="images/layout2_button.jpg"/>
+                    </div>
+                </div>
+            </div>
+            <footer>
+            </footer>
+        </div>
     </body>
 </html>
